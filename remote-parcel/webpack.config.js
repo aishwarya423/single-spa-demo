@@ -16,7 +16,7 @@ module.exports = (webpackConfigEnv, argv) => {
       publicPath:"http:localhost:8001/",
       libraryTarget:"module"
     },
-    expirments:{
+    experiments:{
       outputModule:true,//required for esm build
     }
     // modify the webpack config however you'd like to by adding to this object

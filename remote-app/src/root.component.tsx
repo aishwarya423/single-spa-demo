@@ -1,4 +1,4 @@
-import { ParcelConfigobject } from "single-spa";
+// import { ParcelConfigObject } from "single-spa";
 import Parcel from "single-spa-react/parcel";
 
 export default function Root(props) {
@@ -13,7 +13,7 @@ export default function Root(props) {
         // System.import("@poc-or g/proj-parce1") as Promise<ParcelConfigobject>)
         customProp1="Parent prop1"
         wrapWith="h1"
-        wrapstyle={{ color: "blue" }}
+        wrapStyle={{ color: "blue" }}
         handleError={(err) => console.log(err)}
         parcelDidMount={() => console.log("React parcel mounted")}
       />
