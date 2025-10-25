@@ -1,8 +1,8 @@
 {
   "name": "@poc-org/proj-parcel",
   "scripts": {
-    "start": "webpack serve",
-    "start:standalone": "webpack serve --env standalone",
+    "start": "webpack serve --port 9002",
+    "start:standalone": "webpack serve --env standalone --port 8002",
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
@@ -54,8 +54,8 @@
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
     "single-spa": "^5.9.3",
-    "@types/react": "^19.0.19",
-    "@types/react-dom": "^19.0.9"
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0"
   },
   "types": "dist/poc-org-proj-parcel.d.ts"
 }

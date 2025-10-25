@@ -1,3 +1,6 @@
+import { ComponentType } from "react";
+import { ParcelConfigObject } from "single-spa";
+
 declare module "*.html" {
   const rawHtmlFile: string;
   export = rawHtmlFile;
@@ -36,4 +39,11 @@ declare module "*.webp" {
 declare module "*.svg" {
   const src: string;
   export default src;
+}
+
+declare module '@poc-org/proj-parcel' {
+  const parcel: ParcelConfigObject;
+  const ReactParcel: ComponentType<any>;
+  export default parcel;
+  export { ReactParcel }
 }

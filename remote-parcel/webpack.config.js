@@ -11,6 +11,14 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 
   return merge(defaultConfig, {
+    output:{
+      filename:"poc-org-proj-parcel.js",
+      publicPath:"http:localhost:8001/",
+      libraryTarget:"module"
+    },
+    expirments:{
+      outputModule:true,//required for esm build
+    }
     // modify the webpack config however you'd like to by adding to this object
   });
 };
